@@ -3,23 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Box-sizing</title>
+    <title>How to set background is clipped to the border box?</title>
     <style>
       .box {
         width: 100px;
         height: 100px;
-        color: aliceblue;
-        background-color: brown;
-        padding: 16px;
-        border: 2px solid #333;
-        box-sizing: border-box;
-      }
-      .box {
-        box-sizing: unset;
+        border: 5px blue;
+        border-style: dotted;
+        background-color: black;
+        background-clip: border-box;
       }
     </style>
   </head>
   <body>
-    <div class="box">Day la noi dung bai viet</div>
+    <div class="box">box</div>
   </body>
 </html>
