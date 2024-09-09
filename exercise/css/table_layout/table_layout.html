@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to set the table layout algorithm?</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+      .table-one{
+        table-layout: auto;
+        width: 50%;
+
+      }
+      .table-two{
+        table-layout: fixed;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <br>
+    <h1>how to set the table layout algorithm</h1>
+    <h2>table 1</h2>
+    <table class="table-one">
+      <tr>
+        <th>company</th>
+        <th>contract</th>
+        <th>country</th>
+      </tr>
+      <tr>
+        <td>kaisha A</td>
+        <td>kaishaa@gmail.com</td>
+        <td>viet nam</td>
+      </tr>
+      <tr>
+        <td>kaisha B</td>
+        <td>kaishab@gmail.com</td>
+        <td>viet nam</td>
+      </tr>
+      <tr>
+        <td>kaisha c</td>
+        <td>kaishac@gmail.com</td>
+        <td>viet nam</td>
+      </tr>
+    </table>
+    <h2>table 2</h2>
+    <table class="table-two">
+      <tr>
+        <th>company</th>
+        <th>contract</th>
+        <th>country</th>
+      </tr>
+      <tr>
+        <td>kaisha a</td>
+        <td>kaishaa@gmail.com</td>
+        <td>vietnam</td>
+      </tr>
+      <tr>
+        <td>kaisha b</td>
+        <td>kaishab@gmail.com</td>
+        <td>vietnam</td>
+      </tr>
+      <tr>
+        <td>kaisha c</td>
+        <td>kaishac@gmail.com</td>
+        <td>vietnam</td>
+      </tr>
+    </table>
+  </body>
+</html>
