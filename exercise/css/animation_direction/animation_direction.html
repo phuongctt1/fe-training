@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      How to animation-direction use, then do the animation backward
+    </title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: brown;
+        position: relative;
+        animation-name: move;
+        animation-iteration-count: 2;
+        animation-direction: alternate;
+        animation-duration: 4s;
+      }
+      @keyframes move {
+        0% {
+          background-color: blue;
+          top: 0;
+          left: 0;
+        }
+        25% {
+          background-color: blueviolet;
+          top: 0;
+          left: 100px;
+        }
+        50% {
+          background-color: brown;
+          top: 100px;
+          left: 100px;
+        }
+        75% {
+          background-color: red;
+          top: 100px;
+          left: 0px;
+        }
+        100% {
+          background-color: bisque;
+          top: 0px;
+          left: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>How to animation-direction use, then do the animation backward</h1>
+    <div></div>
+  </body>
+</html>

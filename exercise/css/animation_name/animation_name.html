@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      How to Specify the name of the keyframe you want to bind to the selector
+    </title>
+    <style>
+      @keyframes move {
+        from {
+          translate: 0 0;
+        }
+        to {
+          translate: 100px 200px;
+        }
+      }
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: brown;
+        animation-name: move;
+        animation-duration: 2s;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      How to Specify the name of the keyframe you want to bind to the selector
+    </h1>
+    <div></div>
+  </body>
+</html>
