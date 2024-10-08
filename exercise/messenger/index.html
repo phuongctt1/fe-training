@@ -8,23 +8,29 @@
   </head>
   <body>
     <div id="main">
-      <input type="checkbox" id="input" />
-      <label for="input">Checkbox</label>
-      <div class="messenger__content">
-        <div class="title__box">
-          <img class="message__img" src="./assets/img/avartar.jpg" alt="" />
-          <div class="title__img"></div>
+      <input type="checkbox" id="input" placeholder="+" />
+      <button class="button__message button--open">+</button>
+      <button class="button__message button--close">x</button>
+      <img
+        class="email__img email__open"
+        src="./assets/img/mail.png"
+        alt="email"
+      />
+
+      <label for="input"></label>
+
+      <div class="messenger">
+        <div class="messager__title">
+          <img
+            class="button__back"
+            src="./assets/img/back-arrow.png"
+            alt="button back"
+          />
           <div class="title__name">
             <div class="group__title">Class B1</div>
             <div class="group__active">4 active now</div>
           </div>
-          <div>
-            <img
-              class="message__img"
-              src="./assets/img/calendar.png"
-              alt="calender"
-            />
-          </div>
+          <div class="more">...</div>
         </div>
         <div class="content">
           <div class="content__box">
@@ -77,7 +83,7 @@
             <div>
               <img
                 class="send__img"
-                src="./assets/img/send_icon.jpg"
+                src="./assets/img/send-black.png"
                 alt="send img"
               />
             </div>
