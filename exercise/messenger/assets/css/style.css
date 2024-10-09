@@ -1,5 +1,5 @@
 @import url("./common.css");
-/* resent css */
+/* reset css */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -36,15 +36,15 @@
   background-color: var(--beige-color);
 }
 
-.message__content-img {
+.messenger__content-img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   margin: 0 5px;
 }
 
-.message__content-item {
-  padding: 25px;
+.messenger__content-item {
+  padding: 20px;
   margin: 0 5px;
 }
 
@@ -74,21 +74,21 @@
   opacity: 0.8;
 }
 
-.message__receiver-item {
+.messenger__receiver-item {
   border-radius: var(--large) var(--large) var(--large) var(--small);
   background-color: var(--white-color);
 }
 
-.messenger__content--box {
-  margin: 25px;
+.messenger__content-box {
+  margin: 20px;
 }
 
-.messenger__footer--box {
+.messenger__footer-box {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 88%;
-  height: 50px;
+  width: 86%;
+  padding: 15px 0;
 
   border-radius: 20px;
   margin: 0 auto;
@@ -130,7 +130,7 @@
   position: absolute;
   z-index: 100;
   left: 300px;
-  bottom: 12px;
+  bottom: 23px;
   width: 40px;
   height: 40px;
   opacity: 0;
@@ -143,7 +143,7 @@
 .button__message {
   position: absolute;
   z-index: 5;
-  bottom: 12px;
+  bottom: 23px;
   left: 300px;
 
   width: 40px;
@@ -180,15 +180,15 @@
 }
 
 .email__img {
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   border: 2px solid #000;
 }
 
 .email__open {
   position: absolute;
-  bottom: 12px;
+  bottom: 23px;
   left: 300px;
 }
 
@@ -204,7 +204,7 @@
   margin: 0 10px;
 }
 
-.send__button {
+.messenger__button-send {
   border: none;
   background-color: var(--white-color);
 }
