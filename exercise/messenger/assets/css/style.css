@@ -4,48 +4,51 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: sans-serif;
+  font-size: 15px;
 }
 
 #main {
   position: relative;
   margin-top: 10px;
   margin-left: 50%;
+  height: 100vh;
 }
 
-.messager__title {
+.messenger__header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 
   width: 348px;
-  height: 125px;
-  border-radius: 30px 30px 0 0;
+  padding: 35px 0;
+
+  border-radius: var(--large) var(--large) 0 0;
   background-color: var(--blue-color);
 }
 
-.content {
+.messenger__content {
   position: absolute;
   top: 100px;
-
   width: 348px;
-  height: 590px;
   border-radius: 30px;
 
   background-color: var(--beige-color);
 }
 
-.message__img {
+.message__content-img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  margin: 0 5px;
 }
 
-.message__item {
+.message__content-item {
   padding: 25px;
   margin: 0 5px;
 }
 
-.receiver__messenger {
+.messenger__receiver {
   display: flex;
   align-items: flex-end;
 
@@ -53,39 +56,39 @@
   margin-top: 20px;
 }
 
-.sender__messenger {
+.messenger__sender {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
 
-  padding-left: 90px;
+  margin-left: 90px;
   margin-top: 20px;
 }
 
-.sender__message {
-  border-radius: 30px 30px 5px 30px;
+.messenger__sender-item {
+  border-radius: var(--large) var(--large) var(--small) var(--large);
 
   background-color: var(--blue-color);
-  color: var(--sender-color-text);
+  color: var(--white-color);
 
   opacity: 0.8;
 }
 
-.receiver__message {
-  border-radius: 30px 30px 30px 5px;
-
+.message__receiver-item {
+  border-radius: var(--large) var(--large) var(--large) var(--small);
   background-color: var(--white-color);
 }
 
-.content__box {
-  margin: 15px;
+.messenger__content--box {
+  margin: 25px;
 }
 
-.input__messenger {
+.messenger__footer--box {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   width: 88%;
-  height: 12%;
+  height: 50px;
 
   border-radius: 20px;
   margin: 0 auto;
@@ -93,8 +96,7 @@
   margin-bottom: 20px;
   background-color: var(--white-color);
 
-  font-family: sans-serif;
-  opacity: 0.6;
+  opacity: 1;
 }
 
 .clip__img {
@@ -108,19 +110,15 @@
   height: 25px;
   /* border-radius: 50%; */
   margin-left: 95px;
-  /* background-color: var(--blue-color); */
 }
 
-.group__title {
-  font-family: sans-serif;
+.messenger__header-title {
   font-size: 1.1em;
   font-weight: 600;
 }
 
-.title__name {
+.messenger__header-information {
   padding-bottom: 6%;
-  margin: 0 auto;
-
   color: var(--white-color);
 }
 
@@ -131,24 +129,12 @@
 #input {
   position: absolute;
   z-index: 100;
-  top: 690px;
-  left: 270px;
-
+  left: 300px;
+  bottom: 12px;
   width: 40px;
   height: 40px;
-  margin: 10px;
-
   opacity: 0;
 }
-
-/* label {
-  position: absolute;
-  z-index: 1;
-  top: 700px;
-  left: 15px;
-
-  margin: 10px;
-} */
 
 #input:checked ~ .messenger {
   display: block;
@@ -157,30 +143,28 @@
 .button__message {
   position: absolute;
   z-index: 5;
-  top: 700px;
-  left: 280px;
+  bottom: 12px;
+  left: 300px;
 
   width: 40px;
   height: 40px;
+  /* border: none; */
   border-radius: 50%;
-
-  color: var(--white-color);
 
   font-size: 1.5em;
   font-weight: 600;
-  line-height: 40px;
+  line-height: 1;
   text-align: center;
 }
 
 .button--open {
   display: block;
   background-color: var(--blue-color);
+  color: var(--white-color);
 }
 
 .button--close {
   display: none;
-  background-color: var(--white-color);
-  color: var(--black-color);
 }
 
 #input:checked ~ .button--open {
@@ -204,23 +188,54 @@
 
 .email__open {
   position: absolute;
-  top: 700px;
-  left: 230px;
+  bottom: 12px;
+  left: 300px;
 }
 
 .button__back {
-  width: 35px;
+  width: 15px;
   height: 20px;
-  padding-left: 20px;
+  margin-left: 20px;
   padding-bottom: 6px;
   cursor: pointer;
 }
 
-.more {
-  padding-right: 26px;
-  padding-bottom: 26px;
-  color: var(--white-color);
-  font-size: 1.2em;
-  line-height: 37px;
+.messenger__content--box {
+  margin: 0 10px;
 }
 
+.send__button {
+  border: none;
+  background-color: var(--white-color);
+}
+
+.fas .fa-paper-plane .send__icon {
+  font-size: 5em;
+}
+
+.message__input {
+  padding: 5px;
+  border: none;
+}
+
+.messenger__control--more {
+  padding-bottom: 15px;
+  border: none;
+  background-color: var(--blue-color);
+  color: var(--white-color);
+}
+
+.messenger__header-back {
+  padding-bottom: 15px;
+  border: none;
+  background-color: var(--blue-color);
+  color: var(--white-color);
+}
+
+.messenger__header-title {
+  text-align: center;
+}
+
+.messenger__header-status {
+  text-align: center;
+}

@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <title>messenger</title>
   </head>
   <body>
     <div id="main">
       <input type="checkbox" id="input" placeholder="+" />
-      <button class="button__message button--open">+</button>
       <button class="button__message button--close">x</button>
       <img
         class="email__img email__open"
@@ -20,73 +23,70 @@
       <label for="input"></label>
 
       <div class="messenger">
-        <div class="messager__title">
-          <img
-            class="button__back"
-            src="./assets/img/back-arrow.png"
-            alt="button back"
-          />
-          <div class="title__name">
-            <div class="group__title">Class B1</div>
-            <div class="group__active">4 active now</div>
+        <div class="messenger__header">
+          <button class="messenger__header-back">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <div class="messenger__header-information">
+            <div class="messenger__header-title">Class B1</div>
+            <div class="messenger__header-status">4 active now</div>
           </div>
-          <div class="more">...</div>
+          <button class="messenger__control--more">
+            <i class="fas fa-ellipsis-h"></i>
+          </button>
         </div>
-        <div class="content">
-          <div class="content__box">
-            <div class="receiver__messenger">
+        <div class="messenger__content">
+          <div class="messenger__content--box">
+            <div class="messenger__receiver">
               <img
-                class="message__img"
+                class="message__content-img"
                 src="./assets/img/avartar.jpg"
-                alt="avartar"
+                alt="avatar"
               />
-              <div class="message__item receiver__message">
+              <div class="message__content-item message__receiver-item">
                 first value applies to top-left corner, second value applies to
                 top-right corner
               </div>
             </div>
-            <div class="receiver__messenger">
+            <div class="messenger__receiver">
               <img
-                class="message__img"
+                class="message__content-img"
                 src="./assets/img/avartar.jpg"
-                alt="avartar"
+                alt="avatar"
               />
-              <div class="message__item receiver__message">
+              <div class="message__content-item message__receiver-item">
                 first value applies
               </div>
             </div>
-            <div class="sender__messenger">
-              <div class="message__item sender__message">
+            <div class="messenger__sender">
+              <div class="message__content-item messenger__sender-item">
                 first value applies to top-left corner
               </div>
             </div>
-            <div class="receiver__messenger">
+            <div class="messenger__receiver">
               <img
-                class="message__img"
+                class="message__content-img"
                 src="./assets/img/avartar.jpg"
-                alt="avartar"
+                alt="avatar"
               />
-              <div class="message__item receiver__message">
+              <div class="message__content-item message__receiver-item">
                 first value applies to top-left corner, second value applies
               </div>
             </div>
           </div>
 
-          <div class="input__messenger">
-            <div>
-              <img
-                class="clip__img"
-                src="./assets/img/clip.png"
-                alt="clip"
-              />Type a massage
-            </div>
-            <div>
-              <img
-                class="send__img"
-                src="./assets/img/send-black.png"
-                alt="send img"
-              />
-            </div>
+          <div class="messenger__footer--box">
+            <label for="input">
+              <i class="fas fa-paperclip clip__icon"></i>
+            </label>
+            <input
+              type="text"
+              class="message__input"
+              placeholder="Type a message"
+            />
+            <button class="send__button">
+              <i class="fas fa-paper-plane send__icon"></i>
+            </button>
           </div>
         </div>
       </div>
