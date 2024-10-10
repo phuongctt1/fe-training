@@ -12,14 +12,15 @@
   </head>
   <body>
     <div id="main">
-      <input type="checkbox" id="input" placeholder="+" />
-      <button class="button__message button--close">x</button>
-      <img
-        class="email__img email__open"
-        src="./assets/img/mail.png"
-        alt="email"
-      />
+      <input type="checkbox" id="input" />
 
+      <label for="input" class="button__messenger button--close"
+        ><div class="button--close-item">
+          <i class="checkbox__close fa-solid fa-xmark"></i></div
+      ></label>
+      <label for="input" class="button__messenger button--open">
+        <i class="fa-solid fa-envelope"></i>
+      </label>
 
       <div class="messenger">
         <div class="messenger__header">
@@ -31,7 +32,7 @@
             <div class="messenger__header-status">4 active now</div>
           </div>
           <button class="messenger__control--more">
-            <i class="fas fa-ellipsis-h"></i>
+            <i class="fa-solid fa-ellipsis"></i>
           </button>
         </div>
         <div class="messenger__content">
@@ -75,16 +76,15 @@
           </div>
 
           <div class="messenger__footer-box">
-            <label for="input">
-              <i class="fas fa-paperclip clip__icon"></i>
-            </label>
-            <input
+            <div class="messenger__input-item">
+              <input
               type="text"
-              class="message__input"
+              class="messenger__input"
               placeholder="Type a message"
             />
+            </div>
             <button class="messenger__button-send">
-              <i class="fas fa-paper-plane send__icon"></i>
+              <i class="fa-solid fa-paper-plane"></i>
             </button>
           </div>
         </div>
