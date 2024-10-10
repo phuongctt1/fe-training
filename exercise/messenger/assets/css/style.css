@@ -1,0 +1,276 @@
+@import url("./common.css");
+/* reset css */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+#main {
+  position: relative;
+  margin-top: 10px;
+  margin-left: 50%;
+  height: 100vh;
+}
+
+.messenger__header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 348px;
+  padding: 35px 0;
+
+  border-radius: var(--large) var(--large) 0 0;
+  background-color: var(--blue-color);
+}
+
+.messenger__content {
+  position: absolute;
+  top: 100px;
+  width: 348px;
+  border-radius: var(--large);
+
+  background-color: var(--beige-color);
+}
+
+.messenger__content-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.messenger__content-item {
+  padding: 20px;
+  margin: 0 5px;
+}
+
+.messenger__receiver {
+  display: flex;
+  align-items: flex-end;
+
+  padding-right: 90px;
+  margin-top: 20px;
+}
+
+.messenger__sender {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  margin-left: 90px;
+  margin-top: 20px;
+}
+
+.messenger__sender-item {
+  border-radius: var(--large) var(--large) var(--small) var(--large);
+
+  background-color: var(--blue-color);
+  color: var(--white-color);
+
+  opacity: 0.8;
+}
+
+.messenger__receiver-item {
+  border-radius: var(--large) var(--large) var(--large) var(--small);
+  background-color: var(--white-color);
+}
+
+.messenger__content-box {
+  margin: 20px;
+}
+
+.messenger__footer-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 86%;
+  padding: 15px;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+  background-color: var(--white-color);
+
+  opacity: 1;
+}
+
+.clip__img {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px 0px 20px;
+}
+
+.send__img {
+  width: 25px;
+  height: 25px;
+  /* border-radius: 50%; */
+  margin-left: 95px;
+}
+
+.messenger__header-title {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.messenger__header-information {
+  padding-bottom: 6%;
+  color: var(--white-color);
+}
+
+.messenger {
+  display: none;
+}
+
+#input {
+  position: absolute;
+  z-index: 100;
+  left: 300px;
+  bottom: 23px;
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+}
+
+#input:checked ~ .messenger {
+  display: block;
+}
+
+.button__messenger {
+  position: absolute;
+  z-index: 5;
+  bottom: 23px;
+  left: 300px;
+}
+
+.button--close {
+  display: none;
+}
+
+#input:checked ~ .button--close {
+  display: block;
+}
+
+.button--open {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+#input:checked ~ .button--open {
+  display: none;
+}
+
+.email__img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #000;
+}
+
+.email__open {
+  position: absolute;
+  bottom: 23px;
+  left: 300px;
+}
+
+.button__back {
+  width: 15px;
+  height: 20px;
+  margin-left: 20px;
+  padding-bottom: 6px;
+  cursor: pointer;
+}
+
+.messenger__content--box {
+  margin: 0 10px;
+}
+
+.messenger__button-send {
+  padding: 0 5px;
+  border: none;
+  background-color: var(--white-color);
+}
+
+.messenger__input {
+  padding: 2px 15px;
+  outline: none;
+  border: none;
+  width: 90%;
+}
+
+.messenger__input::before {
+  content: "\f0e0";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.messenger__control--more {
+  padding-bottom: 15px;
+  border: none;
+  background-color: var(--blue-color);
+  color: var(--white-color);
+}
+
+.messenger__header-back {
+  padding-bottom: 15px;
+  border: none;
+  background-color: var(--blue-color);
+  color: var(--white-color);
+}
+
+.messenger__header-title {
+  text-align: center;
+}
+
+.messenger__header-status {
+  text-align: center;
+}
+
+.messenger__button-send .fa-paper-plane {
+  transform: rotate(45deg);
+}
+
+.checkbox__label {
+  position: absolute;
+  bottom: 23px;
+  left: 100px;
+}
+
+.checkbox__label .fa-solid {
+  font-size: 2em;
+}
+
+.button--close-item {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button__messenger .fa-solid {
+  font-size: 2em;
+}
+
+.messenger__input-item::before {
+  content: "\f0c6"; 
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900; 
+  display: inline-block;
+  transform: rotate(90deg); 
+}
+
