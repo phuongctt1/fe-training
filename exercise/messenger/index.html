@@ -8,20 +8,21 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <title>messenger</title>
   </head>
   <body>
     <div id="main">
-      <input type="checkbox" id="input" />
-
-      <label for="input" class="button__messenger button--close"
-        ><div class="button--close-item">
-          <i class="checkbox__close fa-solid fa-xmark"></i></div
-      ></label>
-      <label for="input" class="button__messenger button--open">
-        <i class="fa-solid fa-envelope"></i>
+      <input type="checkbox" id="input" hidden />
+      <label for="input" class="button__messenger button-click">
+        <div class="button--toggle">
+          <i class="fa-solid fa-envelope"></i>
+          <i class="fa-solid fa-xmark"></i>
+        </div>
       </label>
-
       <div class="messenger">
         <div class="messenger__header">
           <button class="messenger__header-back">
@@ -31,61 +32,63 @@
             <div class="messenger__header-title">Class B1</div>
             <div class="messenger__header-status">4 active now</div>
           </div>
-          <button class="messenger__control--more">
+          <button class="messenger__control-more">
             <i class="fa-solid fa-ellipsis"></i>
           </button>
         </div>
+
         <div class="messenger__content">
           <div class="messenger__content-box">
-            <div class="messenger__receiver">
-              <img
-                class="messenger__content-img"
-                src="./assets/img/avartar.jpg"
-                alt="avatar"
-              />
-              <div class="messenger__content-item messenger__receiver-item">
-                first value applies to top-left corner, second value applies to
-                top-right corner
+            <div class="messenger__list-items">
+              <div class="messenger__receiver">
+                <img
+                  class="messenger__content-img"
+                  src="./assets/img/avartar.jpg"
+                  alt="avatar"
+                />
+                <div class="messenger__content-item messenger__receiver-item">
+                  first value applies to top-left corner, second value applies to
+                  top-right corner
+                </div>
+              </div>
+              <div class="messenger__receiver">
+                <img
+                  class="messenger__content-img"
+                  src="./assets/img/avartar.jpg"
+                  alt="avatar"
+                />
+                <div class="messenger__content-item messenger__receiver-item">
+                  first value applies
+                </div>
+              </div>
+              <div class="messenger__sender">
+                <div class="messenger__content-item messenger__sender-item">
+                  first value applies to top-left corner
+                </div>
+              </div>
+              <div class="messenger__receiver">
+                <img
+                  class="messenger__content-img"
+                  src="./assets/img/avartar.jpg"
+                  alt="avatar"
+                />
+                <div class="messenger__content-item messenger__receiver-item">
+                  first value applies to top-left corner, second value applies
+                </div>
               </div>
             </div>
-            <div class="messenger__receiver">
-              <img
-                class="messenger__content-img"
-                src="./assets/img/avartar.jpg"
-                alt="avatar"
-              />
-              <div class="messenger__content-item messenger__receiver-item">
-                first value applies
+            <div class="messenger__footer-box">
+              <div class="messenger__input-item">
+                <input
+                  type="text"
+                  class="messenger__input"
+                  placeholder="Type a message"
+                />
               </div>
+              <button class="messenger__button-send">
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
             </div>
-            <div class="messenger__sender">
-              <div class="messenger__content-item messenger__sender-item">
-                first value applies to top-left corner
-              </div>
-            </div>
-            <div class="messenger__receiver">
-              <img
-                class="messenger__content-img"
-                src="./assets/img/avartar.jpg"
-                alt="avatar"
-              />
-              <div class="messenger__content-item messenger__receiver-item">
-                first value applies to top-left corner, second value applies
-              </div>
-            </div>
-          </div>
-
-          <div class="messenger__footer-box">
-            <div class="messenger__input-item">
-              <input
-              type="text"
-              class="messenger__input"
-              placeholder="Type a message"
-            />
-            </div>
-            <button class="messenger__button-send">
-              <i class="fa-solid fa-paper-plane"></i>
-            </button>
           </div>
         </div>
       </div>
