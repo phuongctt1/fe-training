@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form">
+        <h2>Add Coffee</h2>
+        <div>
+            <label for="ftitle">Title</label>
+            <input type="text" id="ftitle" name="title">
+        </div>
+
+        <div>
+            <label for="fdescription">description</label>
+            <input type="text" id="fdescription" name="description">
+        </div>
+
+        <div>
+            <label for="fthumbnail">thumbnail</label>
+            <input type="file" id="fthumbnail">
+        </div>
+        <br/>
+        <div>
+            <button type="submit" id="add">Add</button>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>list</h2>
+        <div class="list">
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+
+
+</body>
+</html>

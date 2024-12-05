@@ -1,0 +1,53 @@
+/* Reset css */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#add {
+  padding: 10px 20px;
+  margin: 10px auto;
+}
+
+.form,
+.form-update {
+  margin-top: 20px;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.content {
+  margin: 5px 50px;
+}
+
+.btn-edit {
+}
+
+.form__update {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.form__update.active {
+  display: block; 
+}
